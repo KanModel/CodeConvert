@@ -1,8 +1,19 @@
 package me.kanmodel.dec18.convert;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CodeTable {
-	public static boolean isTwo = false; 
-	
+	public static Map<Integer, String> vars= new HashMap<Integer, String>();
+	public static void varsInit(){
+		vars.put(Integer.valueOf("C9", 16), "count");
+		vars.put(Integer.valueOf("CA", 16), "a0");
+		vars.put(Integer.valueOf("CB", 16), "a1");
+		vars.put(Integer.valueOf("CC", 16), "a2");
+		vars.put(Integer.valueOf("CD", 16), "a3");
+	}
+	public static boolean isTwo = false;
+
 	/*
 	 * @param codeH ¸ß4Î»
 	 * @param codeL µÍ4Î»
